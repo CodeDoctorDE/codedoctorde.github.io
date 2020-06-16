@@ -1,0 +1,151 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #161b1f;
+  color: #eee;
+  font-family: 'Roboto';
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  font-size: 3em;
+  margin: 0.5em;
+}
+
+@media (min-width: 1281px) {
+  .title {
+    font-size: 5em;
+  }
+}
+
+.subtitle {
+  font-size: 2em;
+  color: #aaa;
+}
+
+@media (min-width: 1281px) {
+  .main {
+    margin: 3em 5em;
+  }
+}
+
+.main {
+  margin-top: 3em;
+}
+
+.topnav {
+  list-style-type: none;
+  position: fixed;
+  margin: 0;
+  padding: 0.5em 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(10, 10, 10, 0.95);
+}
+
+.topnav .item {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  float: none;
+}
+
+.topnav .item a {
+  font-size: 1.25em;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.1em;
+  margin: 0.5em;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.topnav .item a:hover {
+  color: #aaa;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.section {
+  padding: 0.5em 0;
+  margin: 1em 0;
+}
+
+.section-title {
+  font-size: 2.25em;
+}
+
+.card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-list .item {
+  width: 20em;
+  display: block;
+  padding: 1em;
+  margin: 1em;
+  border: #eee solid 0.01em;
+}
+
+.button {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5em;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #333;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.button:hover {
+  background-color: #191b7c;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  padding: 0.1em;
+  display: inline-block;
+}
+
+.bg-active {
+  background-color: lime;
+}
+
+.bg-paused {
+  background-color: orange;
+}
+/*# sourceMappingURL=style.css.map */
