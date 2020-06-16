@@ -38,6 +38,12 @@ html, body {
 }
 
 @media (min-width: 1281px) {
+  .subtitle {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 1281px) {
   .main {
     margin: 3em 5em;
   }
