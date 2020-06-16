@@ -74,8 +74,8 @@ html, body {
 
 .topnav .item a:hover {
   color: #aaa;
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main-section, .section {
