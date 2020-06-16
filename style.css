@@ -77,13 +77,29 @@ html, body {
           transform: scale(1.25);
 }
 
-.section {
+.main-section, .section {
   padding: 0.5em 0;
   margin: 1em 0;
 }
 
+.main-section .item, .section .item {
+  display: inline-block;
+}
+
+.main-section {
+  padding: 10em 0;
+}
+
 .section-title {
   font-size: 2.25em;
+}
+
+.list {
+  list-style-type: none;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card-list {
