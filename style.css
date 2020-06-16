@@ -12,8 +12,13 @@ html, body {
 }
 
 .title {
-  font-size: 3em;
   margin: 0.5em;
+}
+
+@media (min-width: 400px) and (max-width: 1280px) {
+  .title {
+    font-size: 3em;
+  }
 }
 
 @media (min-width: 1281px) {
@@ -23,8 +28,13 @@ html, body {
 }
 
 .subtitle {
-  font-size: 2em;
   color: #aaa;
+}
+
+@media (min-width: 400px) and (max-width: 1280px) {
+  .subtitle {
+    font-size: 2em;
+  }
 }
 
 @media (min-width: 1281px) {
@@ -92,8 +102,19 @@ html, body {
 }
 
 .section-title {
-  font-size: 2.25em;
   text-transform: uppercase;
+}
+
+@media (min-width: 400px) and (max-width: 1280px) {
+  .section-title {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1281px) {
+  .section-title {
+    font-size: 2.5em;
+  }
 }
 
 .list {

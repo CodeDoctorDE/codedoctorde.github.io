@@ -8,14 +8,18 @@ html, body
 .center
     text-align: center
 .title
-    font-size: 3em
     margin: 0.5em
+@media (min-width: 400px) and (max-width: 1280px)
+    .title
+        font-size: 3em
 @media (min-width: 1281px)
     .title
         font-size: 5em
 .subtitle
-    font-size: 2em
     color: #aaa
+@media (min-width: 400px) and (max-width: 1280px)
+    .subtitle
+        font-size: 2em
 @media (min-width: 1281px)
     .main
         margin: 3em 5em
@@ -56,8 +60,13 @@ html, body
 .main-section
     padding: 10em 0
 .section-title
-    font-size: 2.25em
     text-transform: uppercase
+@media (min-width: 400px) and (max-width: 1280px)
+    .section-title
+        font-size: 2em
+@media (min-width: 1281px)
+    .section-title
+        font-size: 2.5em
 .list
     list-style-type: none
     text-align: center
