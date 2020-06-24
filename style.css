@@ -182,11 +182,15 @@ html, body {
   display: inline-block;
   text-transform: uppercase;
   background-color: #333;
-  -webkit-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 5px 1em #191b7c;
+          box-shadow: 0 5px 1em #191b7c;
   background-color: #191b7c;
 }
 

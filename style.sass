@@ -1,3 +1,10 @@
+$background: #161b1f
+$text: #eee
+$active: #191b7c
+$panel: #333
+$second-background: rgba(10, 10, 10, 0.95)
+$second-text: #aaa
+$second-active: #88e
 
 @font-face 
   font-family: "Roboto"
@@ -5,8 +12,8 @@
 html, body
     margin: 0
     padding: 0
-    background-color: #161b1f
-    color: #eee
+    background-color: $background
+    color: $text
     font-family: 'Roboto'
     letter-spacing: 0.1em
 .center
@@ -20,7 +27,7 @@ html, body
     .title
         font-size: 5em
 .subtitle
-    color: #aaa
+    color: $second-text
 @media (min-width: 400px) and (max-width: 1280px)
     .subtitle
         font-size: 2em
@@ -41,7 +48,7 @@ html, body
     width: 100%
     text-align: center
     align-items: center
-    background-color: rgba(10, 10, 10, 0.95)
+    background-color: $second-background
     .item
         display: inline-block
         align-items: center
@@ -57,11 +64,11 @@ html, body
             margin: 0.5em
             transition: all 0.1s ease-out
             &:hover
-                color: #aaa
+                color: $second-text
                 transform: scale(1.1)
         &.active
             a
-                color: #88e
+                color: $second-active
 .main-section, .section
     padding: 5em 0
     margin: 1em 0
@@ -99,7 +106,7 @@ html, body
         display: block
         padding: 1em
         margin: 1em
-        border: #eee solid 0.01em
+        border: $text solid 0.01em
 .button
     text-decoration: none
     color: inherit
@@ -107,10 +114,12 @@ html, body
     margin: 0.25em
     display: inline-block
     text-transform: uppercase
-    background-color: #333
-    transition: all 0.1s ease-out
+    background-color: $panel
+    transition: all 0.25s ease-out
     &:hover
-        background-color: #191b7c
+        transform: scale(1.1)
+        box-shadow: 0 5px 1em $active
+        background-color: $active
 .dot 
   height: 12px
   width: 12px
