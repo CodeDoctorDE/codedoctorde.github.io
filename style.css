@@ -298,6 +298,7 @@ html, body {
 }
 
 a {
+  text-decoration: inherit;
   color: #88e;
 }
 
