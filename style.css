@@ -283,6 +283,9 @@ html, body {
   text-align: left;
   background-color: rgba(10, 10, 10, 0.95);
   color: #aaa;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
   width: 100%;
 }
 
