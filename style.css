@@ -257,12 +257,20 @@ html, body {
   display: inline-block;
 }
 
+.bg-finished {
+  background-color: #0ff;
+}
+
 .bg-active {
-  background-color: lime;
+  background-color: #0f0;
 }
 
 .bg-paused {
-  background-color: orange;
+  background-color: #fa0;
+}
+
+.bg-dead {
+  background-color: #999;
 }
 
 .bottom-bar {

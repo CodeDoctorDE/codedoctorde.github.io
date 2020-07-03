@@ -9,6 +9,8 @@ $third-background: #333
 $third-text: #aaa
 $third-active: #aaf
 
+$colors: ("finished": #0ff, "active": #0f0, "paused": #fa0, "dead": #999) 
+
 @font-face 
   font-family: "Roboto"
   src: url('Roboto.ttf')
@@ -161,10 +163,9 @@ html, body
   border-radius: 50%
   padding: 0.1em
   display: inline-block
-.bg-active
-    background-color: lime
-.bg-paused
-    background-color: orange
+@each $name, $color in $colors
+    .bg-#{$name}
+        background-color: $color
 .bottom-bar
     margin-top: auto
 .cl
