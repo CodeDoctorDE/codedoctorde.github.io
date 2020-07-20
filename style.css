@@ -69,8 +69,10 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #aaa;
   background-color: rgba(10, 10, 10, 0.95);
   z-index: 10;
+  overflow: hidden;
 }
 
 .topnav .item {
@@ -102,6 +104,37 @@ html, body {
 
 .topnav .item.active a {
   color: #88e;
+}
+
+.topnav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .item {
+    display: none;
+  }
+  .topnav-icon {
+    display: block;
+    float: right;
+  }
+  .topnav.responsive .item {
+    float: none;
+    display: block;
+  }
+  .topnav.responsive .topnav-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.icon, .topnav-icon {
+  padding: 0.75em;
+  margin: 0.5em;
 }
 
 .main-section, .section {
