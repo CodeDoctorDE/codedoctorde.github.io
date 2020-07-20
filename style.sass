@@ -54,8 +54,10 @@ html, body
     width: 100%
     text-align: center
     align-items: center
+    color: $second-text
     background-color: $second-background
     z-index: 10
+    overflow: hidden
     .item
         display: inline-block
         align-items: center
@@ -76,6 +78,29 @@ html, body
         &.active
             a
                 color: $second-active
+    &-icon
+        display: none
+@media screen and (max-width: 600px)
+    .topnav
+        .item
+            display: none
+        &-icon
+            display: block
+            float: right
+        &.responsive
+            .item
+                float: none
+                display: block
+            .topnav-icon
+                position: absolute
+                right: 0
+                top: 0
+                float: none
+                display: block
+                text-align: left
+.icon, .topnav-icon
+    padding: 0.75em
+    margin: 0.5em
 .main-section, .section
     padding: 5em 0
     margin: 1em 0
