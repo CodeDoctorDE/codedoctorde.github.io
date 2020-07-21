@@ -10,6 +10,21 @@ $third-text: #aaa
 $third-active: #aaf
 $colors: ("finished": #0ff, "active": #0f0, "paused": #fa0, "dead": #999) 
 
+::-webkit-scrollbar
+  width: 5px
+
+/* Track */
+::-webkit-scrollbar-track
+  background: $text
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: $panel
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  background: $active
+
 @font-face 
   font-family: "Roboto"
   src: url('Roboto.ttf')
