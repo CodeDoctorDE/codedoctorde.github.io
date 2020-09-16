@@ -10,7 +10,8 @@ $third-text: #aaa
 $third-active: #aaf
 
 $colors: ("finished": #0ff, "active": #0f0, "paused": #fa0, "dead": #999) 
-
+.inverted
+    filter: invert(1) hue-rotate(180deg)
 @font-face 
   font-family: "Roboto"
   src: url('Roboto.ttf')
@@ -21,6 +22,9 @@ html, body
     color: $text
     font-family: 'Roboto'
     letter-spacing: 0.1em
+    display: inline-block
+    min-width: 100%
+    min-height: 100%
 .center
     text-align: center
 .title
