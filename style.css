@@ -3,6 +3,25 @@
           filter: invert(1) hue-rotate(180deg);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #027aeb;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("Roboto.ttf");
@@ -77,8 +96,10 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #aaa;
   background-color: rgba(10, 10, 10, 0.95);
   z-index: 10;
+  overflow: hidden;
 }
 
 .topnav .item {
@@ -109,7 +130,38 @@ html, body {
 }
 
 .topnav .item.active a {
-  color: #88e;
+  color: #3694eb;
+}
+
+.topnav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .item {
+    display: none;
+  }
+  .topnav-icon {
+    display: block;
+    float: right;
+  }
+  .topnav.responsive .item {
+    float: none;
+    display: block;
+  }
+  .topnav.responsive .topnav-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.icon, .topnav-icon {
+  padding: 0.75em;
+  margin: 0.5em;
 }
 
 .main-section, .section {
@@ -213,9 +265,11 @@ html, body {
 
 .card-flip .inner .front, .card-list .flip-item .inner .front {
   position: relative;
+  overflow-y: inherit;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  overflow-y: inherit;
 }
 
 .card-flip .inner .back, .card-list .flip-item .inner .back {
@@ -251,9 +305,9 @@ html, body {
 .button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-box-shadow: 0 5px 1em #191b7c;
-          box-shadow: 0 5px 1em #191b7c;
-  background-color: #191b7c;
+  -webkit-box-shadow: 0 5px 1em #027aeb;
+          box-shadow: 0 5px 1em #027aeb;
+  background-color: #027aeb;
 }
 
 .dot {
@@ -318,7 +372,7 @@ html, body {
 
 a {
   text-decoration: inherit;
-  color: #88e;
+  color: #3694eb;
 }
 
 .wd-5 {
